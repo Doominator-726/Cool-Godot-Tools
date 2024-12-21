@@ -1,7 +1,14 @@
+/* Main style*/
 
+body{
+    background-color:lightskyblue;
+    background-image: url(websiteback.png);
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 nav ul{
     list-style-type: none;
     text-align: center;
+    background-color: white;
 }
 nav li {
     display: inline-block;
@@ -10,7 +17,8 @@ nav li {
 }
 h1 {
     text-align: center;
-    font-size: 64px;
+    font-size: 94px;
+    margin-bottom: auto;
 }
 h2 {
     text-align: center;
@@ -18,5 +26,109 @@ h2 {
 }
 h3 {
     text-align: center;
+    font-size: 48px;
+}
+h4 {
     font-size: 32px;
 }
+
+.area {
+    display: grid;
+
+    border-radius: 100px;
+    gap: 50px;
+    background-color: aliceblue;
+}
+.graphics {
+    grid-column-start: 1;
+    grid-row-start: 1;
+
+    text-align: center;
+}
+.sound {
+    grid-column-start: 2;
+    grid-row-start: 1;
+
+    text-align: center;
+}
+.help {
+    grid-column-start: 1;
+    grid-row-start: 2;
+
+    text-align: center;
+}
+.design {
+    grid-column-start: 2;
+    grid-row-start: 2;
+
+    text-align: center;
+}
+.tool {
+    background: aliceblue;
+    color: black;
+
+    padding: 20px;
+
+    border-radius: 15px;
+    margin: 15px;
+
+    display: flex;
+    flex-direction: row;
+}
+
+/* Dropdown*/
+
+.dropdown {
+    position: fixed;
+    display: inline-block;
+
+    top: 5px;
+}
+
+.drop-button {
+    padding: 32px;
+    border: none;
+
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 32px;
+
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.548);
+    color: rgba(0, 0, 0, 0.548);
+    border-width: 5px;
+
+    background-color:rgba(255, 255, 255, 0.548);
+
+}
+
+.drop-content {
+    display: none;
+
+    font-size: 32px;
+    padding: 16px;
+
+    position: absolute;
+    z-index: 1;
+
+    background-color: rgba(255, 255, 255, 0.397);
+}
+
+.drop-content a {
+
+    display: block;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    text-decoration: none;
+    color: black;
+}
+
+/* Dropdown Interaction */
+
+/* Change color of dropdown links on hover */
+.drop-content a:hover {background-color: #6969694b; transition: all 0.5s;}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .drop-content {display: block}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .drop-button {background-color:aliceblue;color:black; border-color: black; transition: all 0.25s;}
