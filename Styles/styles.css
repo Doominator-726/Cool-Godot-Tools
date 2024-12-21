@@ -1,8 +1,12 @@
 /* Main style*/
 
 body{
+
+    margin-left: 25%;
+    margin-right: 25%;
+    
     background-color:lightskyblue;
-    background-image: url(websiteback.png);
+    background-image: url("../Graphics/Background/background.png");
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 nav ul{
@@ -32,6 +36,9 @@ h4 {
     font-size: 32px;
 }
 
+.image {
+    border-radius: 100px;
+}
 .area {
     display: grid;
 
