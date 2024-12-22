@@ -92,11 +92,9 @@ p {
     display: flex;
     flex-direction: row;
 }
-@media screen and (max-width: 3340px){
-    .content{
-        margin-left: 25%;
-        margin-right: 25%;
-    }
+.content{
+    margin-left: 25%;
+    margin-right: 25%;
 }
 @media screen and (max-width: 2400px){
     .content{
@@ -201,7 +199,7 @@ p {
 
     padding: 32px;
     margin: 16px;
-    
+
     border: none;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -216,12 +214,16 @@ p {
 }
 .drop-content {
     display: none;
-
-    font-size: 32px;
+    
     padding: 16px;
+    margin: 16px;
+
+    top: 110px;
 
     position: absolute;
     z-index: 1;
+
+    font-size: 32px;
 
     background-color: rgba(255, 255, 255, 0.397);
 }
