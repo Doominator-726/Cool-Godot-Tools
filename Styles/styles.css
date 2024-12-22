@@ -1,13 +1,13 @@
 /* Main style*/
 
 body{
-
-    margin-left: 25%;
-    margin-right: 25%;
-    
     background-color:lightskyblue;
     background-image: url("../Graphics/Background/background.png");
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: auto;
+}
+footer {
+    margin: auto;
 }
 nav ul{
     list-style-type: none;
@@ -35,12 +35,19 @@ h3 {
 h4 {
     font-size: 32px;
 }
+h5 {
+    text-align: center;
+    background-color: aliceblue;
+}
 p {
     font-size: 24px;
 }
 .image {
     border-radius: 100px;
     width: 500px;
+}
+.phone-image {
+    display: none;
 }
 .area {
     display: grid;
@@ -85,7 +92,103 @@ p {
     display: flex;
     flex-direction: row;
 }
+@media screen and (max-width: 3340px){
+    .content{
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+}
+@media screen and (max-width: 2400px){
+    .content{
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+@media screen and (max-width: 1920px){
+    p {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 1600px){
+    h1 {
+        font-size: 64px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 36px;
+    }
+    p {
+        font-size: 12px;
+    }
+    .image {
+        width: 400px;
+    }
+}
+@media screen and (max-width: 1360px){
+    p {
+        font-size: 12px;
+    }
+    .image {
+        width: 300px;
+    }
+}
+@media screen and (max-width: 1170px){
+    .home-image {
+        width: 200px;
+    }
+    .area {
+        gap: 0px;
+        padding: 20px;
+    }
+}
+@media screen and (max-width: 800px){
+    p {
+        font-size: 12px;
+    }
+    figure {
+        display: none;
+    }
+    .phone-image {
 
+        display: block;
+        background-color: aliceblue;
+
+        border-style: solid;
+        width: 200px;
+    }
+    .home-image {
+        width: 400px;
+    }
+    .area {
+        background-color: rgb(0, 0, 0, 0);
+    }
+    .graphics {
+        grid-column-start: 1;
+        grid-row-start: 1;
+    
+        text-align: center;
+    }
+    .sound {
+        grid-column-start: 1;
+        grid-row-start: 2;
+    
+        text-align: center;
+    }
+    .help {
+        grid-column-start: 1;
+        grid-row-start: 3;
+    
+        text-align: center;
+    }
+    .design {
+        grid-column-start: 1;
+        grid-row-start: 4;
+    
+        text-align: center;
+    }
+}
 /* Dropdown*/
 
 .dropdown {
@@ -94,9 +197,11 @@ p {
 
     top: 5px;
 }
-
 .drop-button {
+
     padding: 32px;
+    margin: 16px;
+    
     border: none;
 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,9 +213,7 @@ p {
     border-width: 5px;
 
     background-color:rgba(255, 255, 255, 0.548);
-
 }
-
 .drop-content {
     display: none;
 
@@ -122,7 +225,6 @@ p {
 
     background-color: rgba(255, 255, 255, 0.397);
 }
-
 .drop-content a {
 
     display: block;
@@ -130,6 +232,16 @@ p {
 
     text-decoration: none;
     color: black;
+}
+@media screen and (max-width: 730px){
+    .drop-button {
+        padding: 16px;
+        font-size: 16px;
+    }
+    .drop-content {
+        padding: 2px;
+        font-size: 24px;
+    }
 }
 
 /* Dropdown Interaction */
