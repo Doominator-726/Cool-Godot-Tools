@@ -38,6 +38,7 @@ h4 {
 
 .image {
     border-radius: 100px;
+    width: 500px;
 }
 .area {
     display: grid;
